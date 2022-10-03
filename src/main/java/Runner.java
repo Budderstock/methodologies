@@ -11,7 +11,7 @@ public class Runner {
     {
         Scanner keyboard = new Scanner( System.in );
 
-/*      //uncomment this section when you are ready to test the howFar method
+      //uncomment this section when you are ready to test the howFar method
 
         out.print("Enter X1 :: ");
         int x1 = keyboard.nextInt();
@@ -25,9 +25,9 @@ public class Runner {
 
         out.printf( "distance == %.3f\n",Methodologies.howFar( x1, y1, x2, y2 ) );
 
-*/
 
-/*      //uncomment this section when you are ready to test the Quadratics
+
+     //uncomment this section when you are ready to test the Quadratics
 
 		out.print("Enter a :: ");
 		int quadA = keyboard.nextInt();
@@ -40,10 +40,17 @@ public class Runner {
 		System.out.println( Methodologies.getRootAdd( quadA,quadB,quadC ) );
 		System.out.println( Methodologies.getRootSub( quadA,quadB,quadC ) );
 
- */
+
 
 //  Add a section of code to test the howFast method
 
+        out.print("Enter the distance in miles :: ");
+        int distanceInMiles = keyboard.nextInt();
+        out.print("Enter the number of hours :: ");
+        int hours = keyboard.nextInt();
+        out.print("Enter the number of minutes :: ");
+        int minutes = keyboard.nextInt();
+        out.print((Methodologies.howFast(distanceInMiles, hours, minutes)) + " mph");
     }
 
 }
