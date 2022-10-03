@@ -10,7 +10,7 @@ public class Methodologies {
     {
         double convertedMin = minutes/60.0;
         double totalHours = hours + convertedMin;
-        return((distanceInMiles/totalHours));
+        return((Math.round(distanceInMiles/totalHours)));
     }
 
 
